@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namoz vaqtlari</title>
+    <!-- FAVICONS -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/icons/favicon-16x16.png">
+    <link rel="manifest" href="./assets/icons/site.webmanifest">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- BOXICONS -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- TAILWIND CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body
+    class="bg-[url('/assets/images/apk-background.webp')] md:bg-[url('/assets/images/pc-background.webp')] bg-center bg-cover bg-no-repeat bg-fixed min-h-[100vh] font-mono">
+
+    <!-- HEADER -->
+    <header class="bg-[#0B422D] md:bg-transparent py-[13px] md:py-[50px]">
+
+        <div class="md:border-b-[3px] w-[80%] mx-auto md:pb-[30px]">
+
+            <h1 class="text-white text-center h-9 md:h-[46px] text-[24px] md:text-[36px] font-bold">Namoz vaqtlari</h1>
+
+        </div>
+
+    </header>
+
+    <!-- MAIN -->
+    <main>
+        <div class="container mx-auto px-[10px] pt-[30px] md:px-[20px]">
+
+            <!-- LOCATIONS -->
+
+            <div
+                class="bg-[#023926] md:bg-transparent py-[15px] mx-auto min-w-[160px] md:flex items-center justify-center gap-[40px]">
+
+                <h3 class="font-bold text-[20px] text-white hidden md:flex items-center gap-5">Hududni tanlang <i
+                        class='bx bxs-chevrons-right text-3xl'></i></h3>
+
+                <!-- PREVENCIE -->
+
+                <div class="md:hidden hover:scale-105 duration-300 cursor-pointer">
+                    <img src="./assets/icons/location.svg" alt="location" class="mx-auto mb-2">
+                </div>
+
+                <select id="provencies"
+                    class="text-center w-full md:border-2 border-white md:w-auto md:py-2 md:rounded-[32px] bg-transparent outline-none appearance-none font-bold text-[20px] leading-[29px] text-[#FFC700] px-3">
+
+                    <!-- DYNAMIC -->
+
+                </select>
+
+            </div>
+
+            <!-- DATE -->
+
+            <div
+                class="bg-[#023926] md:bg-transparent px-[30px] mx-auto min-w-[160px] md:flex items-center justify-between md:mt-[60px]">
+                <div class="hidden md:block text-[#FFC700] font-semibold text-[15px] md:font-bold md:text-[24px]">
+
+                    <span class="text-white">Mintaqa: </span> <span id="location"> <!--DYNAMIC--> </span>
+
+                </div>
+
+                <div class="md:flex items-center gap-3 border-t-2 md:border-none py-3">
+                    <img src="./assets/icons/calendar.svg" alt="calendar" class="hidden md:block">
+
+                    <div class="font-semibold text-[15px] md:font-bold md:text-[24px]">
+                        <span id="date" class="text-[#FFC700] block md:inline-block text-center"> <!--DYNAMIC--> </span>
+                        <span id="time" class="text-white text-center block md:inline-block"> <!--DYNAMIC--> </span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CARDS -->
+
+            <div class="container mx-auto px-[10px] sm:px-[100px] md:px-[10px] py-[20px] md:py-[80px]">
+
+                <div id="card-wrapper"
+                    class="text-center text-[#FFC700] font-bold text-[24px] md:text-[32px] grid grid-cols-2 md:grid-cols-3 xl:grid-cols-6 gap-[20px] md:gap-[38px]">
+
+                    <!-- DYNAMIC -->
+
+                </div>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+<!-- JAVASCRIPT -->
+<script src="./assets/js/mocks.js"></script>
+<script src="./assets/js/utils.js"></script>
+<script src="./assets/js/api.js"></script>
+<script src="./script.js"></script>
+
+</html>
