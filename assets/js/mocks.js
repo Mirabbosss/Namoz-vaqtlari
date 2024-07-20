@@ -106,13 +106,13 @@ const regions = [
 ]
 
 const days = [
+  "Yakshanba",
   "Dushanba",
   "Seshanba",
   "Chorshanba",
   "Payshanba",
   "Juma",
-  "Shanba",
-  "Yakshanba"
+  "Shanba"
 ]
 
 const months = [

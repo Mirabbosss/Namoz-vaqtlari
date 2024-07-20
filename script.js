@@ -24,7 +24,9 @@ render(provencie, ['option', 'md:border-2 md:border-white text-white md:text-bla
         let minut = String(now.getMinutes()).padStart(2, "0");
         let second = String(now.getSeconds()).padStart(2, "0");
 
-        $('#date').innerHTML = `${days[day-1]}, ${date}-${months[month]}`
+        console.log(days[day]);
+
+        $('#date').innerHTML = `${days[day]}, ${date}-${months[month]}`
         $('#time').innerHTML = `${hour}:${minut}:${second}`
 
 
