@@ -68,11 +68,11 @@ parentProvencies.addEventListener('change', (e)=> {
 
         createCard(res, images).forEach((el) => {
 
-            const newElement = createElement('div', 'bg-[#008653] md:hover:shadow-none md:bg-[#ffffff33] px-[17px] md:px-5 py-[5px] md:py-5 w-[168px] rounded-[10px] card-shadow', `
-                        <h3>${el.title}</h3>
-                        <img src="${el.img}" alt="icon">
-                        <time class="text-white text-[32px] md:text-[48px]">${el.time}</time>
-            `)
+            const newElement = createElement('div', 'w-[100px] sm:w-[200px] md:w-[240px] lg:w-[270px] xl:w-[200px] 2xl:w-[240px] bg-[#008653] md:hover:shadow-none md:bg-[#ffffff33] px-0 md:px-5 py-[5px] md:py-5 w-[168px] rounded-[10px] card-shadow', `
+                <h3 class="text-[18px] sm:text-[24px] md:text-[32px]">${el.title}</h3>
+                <img src="${el.img}" alt="icon" class="scale-75 sm:scale-100">
+                <time class="text-white text-[24px] sm:text-[32px] md:text-[48px]">${el.time}</time>
+    `)
 
             $('#card-wrapper').appendChild(newElement)
         });
